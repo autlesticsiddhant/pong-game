@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    color: #64f4ac;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(100, 244, 172, 0.1);
+    border-radius: 10px;
+    border: 2px solid #64f4ac;
+}
+
+.score-section {
+    flex: 1;
+}
+
+.score-section .label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #64f4ac;
+    font-weight: bold;
+}
+
+.score-section .score {
+    font-size: 3em;
+    font-weight: bold;
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88;
+}
+
+#pongCanvas {
+    display: block;
+    background: #000;
+    border: 3px solid #64f4ac;
+    border-radius: 10px;
+    margin: 30px auto;
+    box-shadow: 0 0 20px rgba(100, 244, 172, 0.5);
+    cursor: none;
+}
+
+.instructions {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(100, 244, 172, 0.05);
+    border-left: 4px solid #64f4ac;
+    border-radius: 5px;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.instructions p {
+    margin: 8px 0;
+}
+
+.instructions strong {
+    color: #64f4ac;
+}
